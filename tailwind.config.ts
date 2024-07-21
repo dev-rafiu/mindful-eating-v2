@@ -1,20 +1,38 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        xl: "1200px",
+      },
+    },
+
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        background: "rgba(var(--background),<alpha-value>)",
+
+        foreground: "rgba(var(--foreground),<alpha-value>)",
+        "muted-foreground": "rgba(var(--muted-foreground),<alpha-value>)",
+
+        primary: "rgba(var(--clr-primary),<alpha-value>)",
+
+        secondary: "rgba(var(--clr-secondary),<alpha-value>)",
+
+        footerDarkBlue: "#060216",
+      },
+      fontFamily: {
+        prosto_one: ["var(--font-prosto-one)"],
+        poppins: ["var(--font-poppins)"],
+        rubik: ["var(--font-rubik)"],
       },
     },
   },
   plugins: [],
 };
-export default config;
