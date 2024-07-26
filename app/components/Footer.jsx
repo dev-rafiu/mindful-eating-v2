@@ -5,18 +5,18 @@ import { navLinks } from "../utils/nav-links";
 function Footer() {
   return (
     <footer className="bg-[#BF7E2E]">
-      <div className="grid gap-5 px-8 py-[3.938rem] text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto] text-sm">
+      <div className="grid gap-[4.5rem] container py-[3.938rem] text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto] text-sm">
         {/* col 1 */}
         <div className="space-y-4">
           <Image
             src="/logo-footer.png"
             alt="Logo"
-            width={150}
-            height={50}
+            width={140}
+            height={40}
             sizes="100vw"
           />
 
-          <p className="max-w-xs leading-6">
+          <p className="max-w-sm">
             Lose weight, gain energy, and feel amazing with our personalized
             diet program. Our expert coaches and supportive community will guide
             you every step of the way.
@@ -81,6 +81,7 @@ function Footer() {
               community and stay updated with the latest news and special
               promotions.
             </p>
+
             <form className="relative overflow-hidden">
               <input
                 type="email"

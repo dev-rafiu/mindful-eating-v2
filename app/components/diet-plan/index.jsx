@@ -1,24 +1,29 @@
 import Image from "next/image";
-import DieticienImg from "/public/images/offer/dieticien.png";
-import YogaImg from "/public/images/offer/yoga.png";
-import WeightManagement from "/public/images/offer/weightmgt.png";
+import Img1 from "/public/images/diet-plan/img1.png";
+import Img2 from "/public/images/diet-plan/img2.png";
+import Img3 from "/public/images/diet-plan/img3.png";
 
 const TABS = ["monday", "tuesday", "wednesday", "thursday", "friday"];
 
 function DietPlan() {
   return (
     <section className="py-16" id="services">
-      <div className="container space-y-8">
+      <div className="container space-y-[2rem]">
         <header className="space-y-2 text-center">
-          <h2 className="text-secondary">What we offer</h2>
-          <h3>Service $ Program</h3>
+          <h2 className="text-secondary">Diet plan</h2>
+          <p className="font-bold leading-5">Weekly Diet Plan</p>
         </header>
 
-        <div className="tabs">
+        {/* tabs */}
+        <div className="scrollbar-hide py-1 grid snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto overscroll-contain scroll-smooth whitespace-nowrap max-w-4xl mx-auto">
           {TABS.map((item) => (
             <button
               key={item}
-              className={`bg-[#F0F5EA] ${item === "monday" && "bg-[#4F771C]"}`}
+              className={`capitalize py-4 px-4 rounded font-bold ${
+                item === "monday"
+                  ? "bg-[#4F771C] text-background"
+                  : "bg-[#F0F5EA] border border-black/20"
+              }`}
             >
               {item}
             </button>
@@ -29,7 +34,7 @@ function DietPlan() {
           <li>
             <div className="relative h-[21.938rem] overflow-hidden rounded">
               <Image
-                src={DieticienImg}
+                src={Img1}
                 alt=""
                 fill
                 sizes="100vw"
@@ -42,7 +47,7 @@ function DietPlan() {
           <li>
             <div className="relative h-[21.938rem] overflow-hidden rounded-md">
               <Image
-                src={YogaImg}
+                src={Img2}
                 alt=""
                 fill
                 sizes="100vw"
@@ -55,7 +60,7 @@ function DietPlan() {
           <li>
             <div className="relative h-[21.938rem] overflow-hidden rounded-md">
               <Image
-                src={WeightManagement}
+                src={Img3}
                 alt=""
                 fill
                 sizes="100vw"

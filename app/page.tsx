@@ -7,20 +7,21 @@ import Team from "./components/team";
 import Pricing from "./components/pricing";
 import Feedback from "./components/feedback";
 import UnlockDream from "./components/unlock-dream";
+import DietPlan from "./components/diet-plan";
 
 export default function Home() {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <MagicBehind /> */}
-      {/* <About /> */}
-      {/* <WhatWeOffer /> */}
-      {/* <DietPla/> */}
-      {/* <Pricing /> */}
-      {/* <Feedback /> */}
-      {/* <UnlockDream /> */}
-      {/* <Team /> */}
-      {/* <Article /> */}
+      <Hero />
+      <MagicBehind />
+      <About />
+      <WhatWeOffer />
+      <DietPlan />
+      <Pricing />
+      <Feedback />
+      <UnlockDream />
+      <Team />
+      <Article />
     </>
   );
 }

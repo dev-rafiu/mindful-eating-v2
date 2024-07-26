@@ -58,7 +58,7 @@ function Pricing() {
                 key={id}
                 className={`${
                   active ? "bg-[#4F771C] text-background" : "bg-[#F0F5EA]"
-                } grid space-y-12 rounded-md p-4`}
+                } grid space-y-12 rounded-md py-6 px-4`}
               >
                 <header className="space-y-4 text-center">
                   <p className="text-lg font-bold">{label}</p>
@@ -83,6 +83,7 @@ function Pricing() {
                             fill={`${active ? "#fff" : "#4F771C"}`}
                           />
                         </span>
+
                         <p
                           className={`max-w-xs leading-5 ${
                             active ? "text-background" : "text-foreground"
