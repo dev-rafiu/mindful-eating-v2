@@ -44,7 +44,7 @@ function Pricing() {
   return (
     <section className="py-16" id="pricing">
       <div className="container space-y-6">
-        <header className="space-y-1 text-center">
+        <header className="space-y-2">
           <h2 className="text-secondary">Pricing</h2>
           <p className="font-bold leading-5">Flexible Subscription Plans</p>
         </header>

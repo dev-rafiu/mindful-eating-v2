@@ -89,9 +89,9 @@ const MAGIC_BEHIND = [
 function MagicBehind() {
   return (
     <section className="py-16">
-      <div className="container space-y-[3.188rem]">
+      <div className="container space-y-[2.5rem]">
         <header className="lg:text-center">
-          <h2>The Magic Behind</h2>
+          <h2 className="leading-4">The Magic Behind</h2>
         </header>
 
         <ul className="grid gap-4 lg:grid-cols-4">

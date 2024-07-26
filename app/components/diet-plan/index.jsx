@@ -9,7 +9,7 @@ function DietPlan() {
   return (
     <section className="py-16" id="services">
       <div className="container space-y-[2rem]">
-        <header className="space-y-2 text-center">
+        <header className="space-y-2">
           <h2 className="text-secondary">Diet plan</h2>
           <p className="font-bold leading-5">Weekly Diet Plan</p>
         </header>
@@ -30,6 +30,7 @@ function DietPlan() {
           ))}
         </div>
 
+        {/* Image gallery */}
         <ul className="grid gap-8 lg:grid-cols-3">
           <li>
             <div className="relative h-[21.938rem] overflow-hidden rounded">

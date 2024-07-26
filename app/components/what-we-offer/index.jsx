@@ -7,7 +7,7 @@ function WhatWeOffer() {
   return (
     <section className="py-16" id="services">
       <div className="container space-y-8">
-        <header className="space-y-2 text-center">
+        <header className="space-y-2">
           <h2 className="text-secondary">What we offer</h2>
           <h3>Service $ Program</h3>
         </header>

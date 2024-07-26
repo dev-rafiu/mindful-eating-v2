@@ -5,7 +5,7 @@ import { navLinks } from "../utils/nav-links";
 function Footer() {
   return (
     <footer className="bg-[#BF7E2E]">
-      <div className="grid gap-[4.5rem] container py-[3.938rem] text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto] text-sm">
+      <div className="grid lg:gap-[4.5rem] gap-[2rem] container py-[3.938rem] text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto] text-sm">
         {/* col 1 */}
         <div className="space-y-4">
           <Image

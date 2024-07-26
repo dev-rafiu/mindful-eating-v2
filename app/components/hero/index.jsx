@@ -4,12 +4,12 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <section>
+    <section className="py-16">
       <div className="container grid gap-10 lg:grid-cols-2">
         {/* text wrapper */}
-        <div className="self-center lg:py-0 lg:space-y-10">
+        <div className="self-center space-y-10">
           <div className="space-y-4 lg:space-y-[2.125rem]">
-            <h1 className="max-w-[29.5rem] font-medium lg:leading-[3.8rem] text-[3.5rem]">
+            <h1 className="max-w-[29.5rem] font-medium lg:leading-[3.8rem] lg:text-[3.5rem]">
               Discover a New You with Our Expert Guidance
             </h1>
 

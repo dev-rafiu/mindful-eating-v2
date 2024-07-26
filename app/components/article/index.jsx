@@ -36,7 +36,7 @@ function Article() {
   return (
     <section className="py-16" id="blog">
       <div className="container space-y-6">
-        <header className="space-y-1 text-center">
+        <header className="space-y-1">
           <h2 className="text-secondary">Article </h2>
           <p className="font-bold leading-5">Our Latest Article</p>
         </header>

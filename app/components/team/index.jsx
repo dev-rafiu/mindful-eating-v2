@@ -26,8 +26,8 @@ const TEAM = [
 function Team() {
   return (
     <section className="bg-[#F0F5EA] py-16">
-      <div className="space-y-6 relative">
-        <header className="space-y-1 text-center">
+      <div className="space-y-6 relative container">
+        <header className="space-y-2">
           <h2 className="text-secondary">Team</h2>
           <p className="font-bold leading-5">Meet Our Team</p>
         </header>
@@ -41,10 +41,9 @@ function Team() {
           className="absolute left-0 right-0 mx-auto top-[150px] hidden lg:block"
         />
 
-        <ul className="gap-8 flex overflow-x-auto lg:flex-row items-center justify-center">
+        <ul className="scrollbar-hide grid snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto overscroll-contain scroll-smooth max-w-6xl mx-auto">
           {TEAM.map((item) => {
             const { id, name, imgUrl, title } = item;
-
             return (
               <li
                 key={id}
@@ -60,7 +59,7 @@ function Team() {
                   />
                 </div>
 
-                <div>
+                <div className="">
                   <p className="text-base font-bold">{name}</p>
                   <p className="text-sm">{title}</p>
                 </div>

@@ -30,7 +30,7 @@ function Feedback() {
   return (
     <section className="py-10">
       <div className="container space-y-6">
-        <header className="text-center">
+        <header className="">
           <h2>Feedback corner</h2>
         </header>
 

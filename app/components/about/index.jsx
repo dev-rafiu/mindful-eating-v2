@@ -19,12 +19,12 @@ function About() {
 
         {/* text wrapper */}
         <div className="space-y-6 self-center">
-          <header className="space-y-6">
-            <h2 className="text-secondary lg:text-center">
+          <header className="space-y-4">
+            <h2 className="text-secondary">
               About Mindful <span className="text-[#4F771C]">Eating</span>
             </h2>
 
-            <h3 className="leading-[3.75rem] max-w-[35rem] text-[2.5rem]">
+            <h3 className="lg:leading-[2.5rem] max-w-[25rem] leading-9">
               Fuel your body, fuel your life: Better nutrition for optimal
               health and happiness!
             </h3>
