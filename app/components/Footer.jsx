@@ -4,8 +4,8 @@ import { navLinks } from "../utils/nav-links";
 
 function Footer() {
   return (
-    <footer className="">
-      <div className="grid gap-5 bg-[#BF7E2E] px-5 py-12 text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto]">
+    <footer className="bg-[#BF7E2E]">
+      <div className="grid gap-5 px-8 py-[3.938rem] text-background lg:grid-cols-[auto,_1fr,_1fr,_1fr,_auto] text-sm">
         {/* col 1 */}
         <div className="space-y-4">
           <Image
@@ -16,7 +16,7 @@ function Footer() {
             sizes="100vw"
           />
 
-          <p className="max-w-sm text-base">
+          <p className="max-w-xs leading-6">
             Lose weight, gain energy, and feel amazing with our personalized
             diet program. Our expert coaches and supportive community will guide
             you every step of the way.

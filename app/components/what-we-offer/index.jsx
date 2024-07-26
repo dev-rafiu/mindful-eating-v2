@@ -1,10 +1,11 @@
 import Image from "next/image";
 import DieticienImg from "/public/images/offer/dieticien.png";
 import YogaImg from "/public/images/offer/yoga.png";
+import WeightManagement from "/public/images/offer/weightmgt.png";
 
 function WhatWeOffer() {
   return (
-    <section className="py-16">
+    <section className="py-16" id="services">
       <div className="container space-y-8">
         <header className="space-y-2 text-center">
           <h2 className="text-secondary">What we offer</h2>
@@ -12,8 +13,8 @@ function WhatWeOffer() {
         </header>
 
         <ul className="grid gap-8 lg:grid-cols-3">
-          <li className="">
-            <div className="relative h-[25rem] overflow-hidden rounded-md">
+          <li>
+            <div className="relative h-[21.938rem] overflow-hidden rounded">
               <Image
                 src={DieticienImg}
                 alt=""
@@ -25,8 +26,8 @@ function WhatWeOffer() {
             </div>
           </li>
 
-          <li className="">
-            <div className="relative h-[25rem] overflow-hidden rounded-md">
+          <li>
+            <div className="relative h-[21.938rem] overflow-hidden rounded-md">
               <Image
                 src={YogaImg}
                 alt=""
@@ -38,10 +39,10 @@ function WhatWeOffer() {
             </div>
           </li>
 
-          <li className="">
-            <div className="relative h-[25rem] overflow-hidden rounded-md">
+          <li>
+            <div className="relative h-[21.938rem] overflow-hidden rounded-md">
               <Image
-                src={DieticienImg}
+                src={WeightManagement}
                 alt=""
                 fill
                 sizes="100vw"

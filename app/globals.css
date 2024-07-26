@@ -13,6 +13,10 @@
   --clr-secondary: 255, 140, 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   h1 {
     @apply scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl;

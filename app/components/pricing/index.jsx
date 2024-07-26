@@ -15,7 +15,7 @@ const PRICING = [
   },
 
   {
-    id: 1,
+    id: 2,
     label: "Premium",
     price: 99,
     active: false,
@@ -27,7 +27,7 @@ const PRICING = [
   },
 
   {
-    id: 1,
+    id: 3,
     label: "Customized",
     price: "$$",
     active: true,
@@ -42,11 +42,11 @@ const PRICING = [
 
 function Pricing() {
   return (
-    <section className="py-16">
+    <section className="py-16" id="pricing">
       <div className="container space-y-6">
-        <header className="space-y-2 text-center">
+        <header className="space-y-1 text-center">
           <h2 className="text-secondary">Pricing</h2>
-          <p className="font-bold">Flexible Subscription Plans</p>
+          <p className="font-bold leading-5">Flexible Subscription Plans</p>
         </header>
 
         <ul className="grid gap-8 lg:grid-cols-3">
@@ -56,7 +56,9 @@ function Pricing() {
             return (
               <li
                 key={id}
-                className={`${active ? "bg-[#4F771C] text-background" : "bg-[#F0F5EA]"} grid space-y-12 rounded-md p-6`}
+                className={`${
+                  active ? "bg-[#4F771C] text-background" : "bg-[#F0F5EA]"
+                } grid space-y-12 rounded-md p-4`}
               >
                 <header className="space-y-4 text-center">
                   <p className="text-lg font-bold">{label}</p>
@@ -68,19 +70,23 @@ function Pricing() {
                 </header>
 
                 {/* features */}
-                <ul className="grid gap-4">
+                <ul className="grid gap-2 text-sm">
                   {features.map((item, idx) => {
                     return (
                       <li key={idx} className="flex items-center gap-4">
                         <span
-                          className={`${active ? "text-primary" : "text-background"}`}
+                          className={`${
+                            active ? "text-primary" : "text-background"
+                          }`}
                         >
                           <Icons.Check
                             fill={`${active ? "#fff" : "#4F771C"}`}
                           />
                         </span>
                         <p
-                          className={`${active ? "text-background" : "text-foreground"}`}
+                          className={`max-w-xs leading-5 ${
+                            active ? "text-background" : "text-foreground"
+                          }`}
                         >
                           {item}
                         </p>
@@ -90,7 +96,9 @@ function Pricing() {
                 </ul>
 
                 <button
-                  className={`${active && "text-secondary bg-background"} mx-auto block w-[90%] rounded-md bg-[#4F771C] px-6 py-2 capitalize text-background`}
+                  className={`${
+                    active && "bg-background text-secondary"
+                  } mx-auto block w-[90%] rounded-md bg-[#4F771C] px-6 py-2 capitalize text-background`}
                 >
                   book now
                 </button>

@@ -26,13 +26,22 @@ const TEAM = [
 function Team() {
   return (
     <section className="bg-[#F0F5EA] py-16">
-      <div className="space-y-6">
-        <header className="space-y-2 text-center">
+      <div className="space-y-6 relative">
+        <header className="space-y-1 text-center">
           <h2 className="text-secondary">Team</h2>
-          <p className="font-bold">Meet Our Team</p>
+          <p className="font-bold leading-5">Meet Our Team</p>
         </header>
 
-        <ul className="grid gap-8 lg:grid-cols-3">
+        <Image
+          src="/curvy-line.png"
+          alt=""
+          width={1000}
+          height={100}
+          sizes="100vw"
+          className="absolute left-0 right-0 mx-auto top-[150px] hidden lg:block"
+        />
+
+        <ul className="gap-8 flex overflow-x-auto lg:flex-row items-center justify-center">
           {TEAM.map((item) => {
             const { id, name, imgUrl, title } = item;
 
@@ -41,7 +50,7 @@ function Team() {
                 key={id}
                 className="space-y-4 rounded-md bg-[#F0F5EA] p-4 text-center"
               >
-                <div className="relative mx-auto h-[15rem] w-[15rem] rounded-full lg:h-[25rem] lg:w-[25rem]">
+                <div className="relative mx-auto h-[15rem] w-[15rem] rounded-full">
                   <Image
                     src={imgUrl}
                     alt={name}

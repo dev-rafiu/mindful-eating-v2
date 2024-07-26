@@ -11,15 +11,16 @@ import UnlockDream from "./components/unlock-dream";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <MagicBehind />
-      <About />
-      <WhatWeOffer />
-      <Pricing />
-      <Feedback />
-      <UnlockDream />
-      <Team />
-      <Article />
+      {/* <Hero /> */}
+      {/* <MagicBehind /> */}
+      {/* <About /> */}
+      {/* <WhatWeOffer /> */}
+      {/* <DietPla/> */}
+      {/* <Pricing /> */}
+      {/* <Feedback /> */}
+      {/* <UnlockDream /> */}
+      {/* <Team /> */}
+      {/* <Article /> */}
     </>
   );
 }
